@@ -1,11 +1,11 @@
 ---
 name: artifact-template-machining-cards
-description: 根据零件图样、三维模型和CAM成果，制作或优化机械加工工艺过程卡、数控加工工序卡及AutoCAD工序图，使用保留的无学校名称A3横向模板，按零件交付DOCX和PDF。适用于机械制造课程设计工艺卡，不用于单独修复CAM刀路或泛用文档写作。
+description: 根据零件图样、三维模型和CAM成果，制作或优化机械加工工艺过程卡、数控加工工序卡及AutoCAD工序图，使用标准A3横向模板，按零件交付DOCX和PDF。适用于机械制造课程设计工艺卡，不用于单独修复CAM刀路或泛用文档写作。
 ---
 
 # 机械加工工艺卡
 
-使用 `artifact-template.json` 指定的 `assets/reference.docx` 作为版式依据；模板不带学校名称。参考模板中的零件、材料、参数、程序、签名和示例图片只是样例，制作新卡时替换，不当作当前任务的技术输入。标准与参考资料保存在 `assets/standards/`。
+使用 `artifact-template.json` 指定的 `assets/reference.docx` 作为标准A3横向模板依据。参考模板中的零件、材料、参数、程序、签名和示例图片只是样例，制作新卡时替换，不当作当前任务的技术输入。标准与参考资料保存在 `assets/standards/`。
 
 ## 工作方式
 
@@ -24,7 +24,7 @@ description: 根据零件图样、三维模型和CAM成果，制作或优化机�
 
 ## 按需读取的资源
 
-- `assets/reference.pdf`、`assets/preview.png`：去学校名称的模板外观；保留参考DOCX原样，输出时复制修改。
+- `assets/reference.pdf`、`assets/preview.png`：标准A3横向模板外观；保留参考DOCX原样，输出时复制修改。
 - `assets/standards/机床夹具设计指导_第三章_定位夹紧符号.pdf`：定位、夹紧符号参考，是保留的教材章节，不把它称为已核验的现行国家标准。
 - [Windows工具链](references/windows.md)：本机LibreOffice与AutoCAD的可靠入口和PDF渲染回退。
 - `scripts/sheetgen.py`、`scripts/skutil.py`：可选的AutoLISP二维图元及装夹绘图辅助；按本任务图样设定尺寸，不沿用示例公差、材料或固定零件参数。

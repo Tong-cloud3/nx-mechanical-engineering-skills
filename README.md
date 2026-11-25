@@ -45,7 +45,7 @@ flowchart LR
 | :--- | :--- | :--- | :--- |
 | **`nx-cae`** | 诊断 NX Nastran 无结果/刚体模态、独立拆分模态输出请求（实测单件 `.op2` 可从 ~610 MB 降至 ~155 MB）、`ResultReference` 路径与单位制绑定、NX 12 原生 OpenGL 后处理云图抓帧、工程体积瘦身边界 | `inspect_cae.py`（无需启动 NX 秒级体检）<br/>`check_sim_nxopen.py`（NXOpen 只读核验） | [SKILL.md](./skills/nx-cae/SKILL.md) |
 | **`nx-cam-recovery`** | 修复 CAM 缺失刀轨、工序间 IPW 动态传递与嵌套转塔坐标系变换、T 型槽专用刀具工厂构建、清理无效可视化发生件警告、隔离候选件哈希校验晋升 | 规范工作流与 NX12 API 避坑库 | [SKILL.md](./skills/nx-cam-recovery/SKILL.md) |
-| **`artifact-template-machining-cards`** | 复制去学校名称 A3 横向模板生成过程卡/工序卡、核对切削速度/进给/余量公式、调用 AutoCAD 控制台批量绘出带定位夹紧符号的工序图、PDFium 逐页渲染审图 | `sheetgen.py` · `skutil.py`<br/>`inspect_cards.py` · `windows_pdfium.py` | [SKILL.md](./skills/artifact-template-machining-cards/SKILL.md) |
+| **`artifact-template-machining-cards`** | 复制标准 A3 横向模板生成过程卡/工序卡、核对切削速度/进给/余量公式、调用 AutoCAD 控制台批量绘出带定位夹紧符号的工序图、PDFium 逐页渲染审图 | `sheetgen.py` · `skutil.py`<br/>`inspect_cards.py` · `windows_pdfium.py` | [SKILL.md](./skills/artifact-template-machining-cards/SKILL.md) |
 | **`engineering-report-docx`** | 保留模板样式与可编辑公式、统一中西文字体（宋体 / 黑体 / Times New Roman）、标准三线表、章内图表编号查漏与 Word COM 防僵尸进程导出（含 LibreOffice 自动回退） | `check_report_docx.py`<br/>`export_report_pdf.py` | [SKILL.md](./skills/engineering-report-docx/SKILL.md) |
 
 ---
